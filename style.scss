@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Combo&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Silkscreen&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url("background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+html {
+  font-size: 62.6%;
+  .loader {
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 30rem;
+    }
+  }
+  .container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0.1rem solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1rem);
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0%;
+      border-radius: 0rem 0rem 0.5rem 0.5rem;
+      fieldset {
+        position: relative;
+        top: 5%;
+        width: 95%;
+        height: 40%;
+        padding: 1rem;
+        border-radius: 3rem;
+        border: 0.3rem solid #445;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-size: 2.5rem;
+          color: #445;
+          padding: 1rem;
+          width: 90%;
+        }
+        span {
+          background-color: rgba(255, 255, 255, 0.3);
+          border: 0.1rem solid rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(1rem);
+          padding: 1rem;
+          border-radius: 1rem;
+          width: 80%;
+          color: #445;
+          padding: 1rem;
+          font-size: 2rem;
+          transition: 0.3s ease;
+        }
+      }
+
+      label {
+        position: relative;
+        top: 5%;
+        font-size: 3rem;
+        width: 95%;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        font-weight: bold;
+        color: #445;
+      }
+      input {
+        position: relative;
+        top: 5%;
+        width: 95%;
+        padding: 2rem;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        outline: none;
+        border: 0.1rem solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(1rem);
+        color: #445;
+      }
+      button {
+        padding: 2rem;
+        margin-top: 7rem;
+        margin-bottom: 6rem;
+        width: 90%;
+        border-radius: 4rem;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: 0.1rem solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(1rem);
+        color: #445;
+
+        -webkit-tap-highlight-color: transparent;
+        -moz-tap-highlight-color: transparent;
+        -o-tap-highlight-color: transparent;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 560px) {
+  html {
+    font-size: 45%;
+    .container {
+      .form {
+        position: relative;
+        fieldset {
+          height: 30%;
+          top: -2%;
+          border-radius: 3rem;
+          overflow: hidden;
+          h1 {
+            font-size: 3rem;
+          }
+          span {
+            padding: 2rem;
+          }
+        }
+
+        label {
+          font-size: 4rem;
+          margin-top: 5rem;
+          margin-bottom: 2rem;
+          width: 90%;
+          top: 0%;
+        }
+        input {
+          border-radius: 3.5rem;
+          padding: 3rem;
+          top: 0%;
+          font-size: 2.5rem;
+        }
+        button {
+          padding: 3.5rem;
+          margin-top: 6rem;
+          font-size: 2rem;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
